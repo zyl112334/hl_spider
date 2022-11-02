@@ -47,7 +47,7 @@ class HLSpiderSpider(scrapy.Spider):
         # break
         global count
         count += 1
-        if count < 3:
+        if count < 2001:
             next_page = 'https://www.66law.cn/question/list_{}_r3.aspx'.format(count)
             yield scrapy.Request(next_page)
 
